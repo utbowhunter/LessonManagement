@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009595">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_corners_screen">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Info ..."
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp" />
+        <EditText
+            style="@style/EditTextStyle"
+            android:inputType="textPersonName"
+            android:id="@+id/editTextFirstName"
+            android:hint="@string/first_name"
+            android:background="@drawable/rounded_corners"/>
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/editTextLastName"
+            android:hint="@string/last_name"
+            android:background="@drawable/rounded_corners"
+            style="@style/EditTextStyle" />
+        <EditText
+            style="@style/EditTextStyle"
+            android:inputType="textPersonName"
+            android:id="@+id/editTextPrefName"
+            android:hint="@string/pref_name"
+            android:background="@drawable/rounded_corners"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
+            android:inputType="date"
+            android:id="@+id/editTextBirthday"
+            android:hint="@string/birthday"
+            android:background="@drawable/rounded_corners"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!-- android:background="@drawable/rounded_corners_screen"> -->
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:inputType="textPostalAddress"
+                android:id="@+id/editTextStreetAddress"
+                android:hint="@string/street_address"
+                android:background="@drawable/rounded_corners"
+                style="@style/EditTextStyle" />
+
+            <EditText
+                android:layout_width="175dp"
+                android:inputType="textPostalAddress"
+                android:id="@+id/editTextCity"
+                android:hint="City"
+                android:background="@drawable/rounded_corners"
+                android:layout_below="@+id/editTextStreetAddress"
+                style="@style/EditTextStyle"
+           />
+
+            <EditText
+                android:inputType="textPostalAddress"
+                android:layout_width="40dp"
+                android:id="@+id/editTextState"
+                android:hint="State"
+                android:background="@drawable/rounded_corners"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/editTextStreetAddress"
+                android:layout_toRightOf="@id/editTextCity"/>
+
+            <EditText
+                android:inputType="textPostalAddress"
+                android:layout_width="100dp"
+                android:id="@+id/editTextZip"
+                android:hint="84065"
+                android:background="@drawable/rounded_corners"
+                android:layout_toRightOf="@+id/editTextState"
+                android:layout_below="@+id/editTextStreetAddress"
+
+                style="@style/EditTextStyle" />
+
+            <EditText
+                android:inputType="textPhonetic"
+                android:id="@+id/editTextPhone"
+                android:hint="Contact Phone Number"
+                android:background="@drawable/rounded_corners"
+                android:layout_below="@+id/editTextCity"
+
+                style="@style/EditTextStyle" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/editTextParentNames"
+            android:hint="Parent Names"
+            android:background="@drawable/rounded_corners"
+            android:layout_below="@+id/tex"
+
+            style="@style/EditTextStyle" />
+
+        <EditText
+            android:inputType="textPostalAddress"
+            android:id="@+id/editTextParentPhone"
+            android:hint="Parent Phone Number"
+            android:background="@drawable/rounded_corners"
+
+
+            style="@style/EditTextStyle" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/editTextEmail"
+            android:hint="Parent Email Address"
+            android:background="@drawable/rounded_corners"
+
+
+            style="@style/EditTextStyle" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
